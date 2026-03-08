@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Корневой маршрут — для проверки
+
 app.get('/', (req, res) => {
     res.send('Прокси-сервер работает. Используйте POST /api/detect');
 });
